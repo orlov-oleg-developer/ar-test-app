@@ -1,0 +1,30 @@
+{
+  "name": "webar-github-pages-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "homepage": "https://orlov-oleg-developer.github.io/ar-test-app/",
+  "config": {
+    "repositoryName": "ar-test-app"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@google/model-viewer": "^4.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "vite": "^6.3.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.8.3"
+  }
+}
